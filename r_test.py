@@ -40,7 +40,8 @@ from open.globals import *
 
 
 
-creds = service_account.Credentials.from_service_account_file(SERVICE_FILE,scopes=SCOPES)
+creds = service_account.Credentials.from_service_account_file(SERVICE_FILE)
+scoped_credentials = creds.with_scopes(SCOPES)
 delegated_creds = creds.with_subject(STD_USER)
 authed_session = AuthorizedSession(creds)
 
