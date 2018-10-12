@@ -102,3 +102,21 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#SV
+open/
+
+#virtualenv
+bin/
+include/
+lib/
+pip-selfcheck.json
+
+#messy files due to windows
+..gitignore.un~
+.gitignore~
+*.py.un~
+
+#credentials
+credentials.json
+

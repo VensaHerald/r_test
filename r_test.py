@@ -6,5 +6,6 @@ import requests
 n = 3
 url = 'https://httpbin.org/redirect/{}'.format(n)
 r = requests.request('GET',url, allow_redirects=False)
-print (r.status_code, r.headers['location'])
+print (r.status_code)
 
+print (r.headers)
